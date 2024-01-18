@@ -1,0 +1,20 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:vh="http://typo3.org/ns/In2code/Powermail/ViewHelpers"
+    xmlns:timeprotect="http://typo3.org/ns/HauerHeinrich/HhPowermailTimeprotect/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+<timeprotect:encrypt value="{field.txHhpowermailtimeprotectProtectionTime}" passphrase="{field.txHhpowermailtimeprotectRandstring}" />
+
+<div class="powermail_fieldwrap powermail_fieldwrap_type_date powermail_fieldwrap_{field.marker} {field.css} {settings.styles.framework.fieldAndLabelWrappingClasses}">
+    <f:form.hidden
+        id="powermail_field_{field.marker}"
+        property="{field.marker}"
+        value="{timeprotectData.encryptText}_{timeprotectData.timestamp}"
+        class="powermail_hidden {field.css} powermail_{field.marker} hh_powermail_tp"
+        data="{tp: '{field.txHhpowermailtimeprotectProtectionTime}', count-text: '{field.txHhpowermailtimeprotectCountText}'}" />
+</div>
+
+<f:asset.css identifier="powermail-timeprotect" href="EXT:hh_powermail_timeprotect/Resources/Public/Css/hh-pm-protect.css" />
+<f:asset.script identifier="powermail-timeprotect" src="EXT:hh_powermail_timeprotect/Resources/Public/JavaScript/hh-pm-protect.js" />
+
+</html>

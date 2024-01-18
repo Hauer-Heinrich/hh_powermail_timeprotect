@@ -1,0 +1,15 @@
+### powermail - new custom fields
+tx_powermail {
+    flexForm {
+        type {
+            addFieldOptions {
+                timeprotect = LLL:EXT:ext/Resources/Private/Language/locallang.xlf:label
+                timeprotect {
+                    ### (0:string, 1:array, 2:date, 3:file)
+                    dataType = 0
+                    export = 1
+                }
+            }
+        }
+    }
+}

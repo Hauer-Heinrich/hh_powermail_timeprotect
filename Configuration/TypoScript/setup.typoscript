@@ -1,0 +1,24 @@
+plugin.tx_powermail {
+    view {
+        partialRootPaths {
+            67 = EXT:hh_powermail_timeprotect/Resources/Private/Partials/
+        }
+    }
+
+    settings {
+        setup {
+            spamshield.methods {
+                67 {
+                    _enable = 1
+                    name = Timeprotect
+                    class = HauerHeinrich\HhPowermailTimeprotect\Domain\Validator\Spamshield\Timeprotect
+                    indication = 67
+
+                    configuration {
+                        protectionTime = 300
+                    }
+                }
+            }
+        }
+    }
+}

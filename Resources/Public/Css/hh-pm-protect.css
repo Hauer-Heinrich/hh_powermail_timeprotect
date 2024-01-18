@@ -1,0 +1,6 @@
+.powermail_submit.hidden {
+    visibility: hidden;
+}
+.submit-counter.hidden {
+    display: none;
+}

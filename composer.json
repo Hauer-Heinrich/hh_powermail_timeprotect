@@ -1,0 +1,53 @@
+{
+    "type": "typo3-cms-extension",
+    "name": "hauerheinrich/hh-powermail-timeprotect",
+    "description": "Powermail time protection - for spam prevention.",
+    "keywords": [ "TYPO3 CMS", "TYPO3", "theme", "distribution", "extension" ],
+    "homepage": "https://www.hauer-heinrich.de",
+    "readme": "README.md",
+    "time": "2024-01-17",
+    "version": "1.0.0",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Christian Hackl",
+            "homepage": "https://www.hauer-heinrich.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Hauer-Heinrich/hh_powermail_timeprotect/issues",
+        "source": "https://github.com/Hauer-Heinrich/hh_powermail_timeprotect",
+        "docs": "https://github.com/Hauer-Heinrich/hh_powermail_timeprotect/blob/master/README.md"
+    },
+    "funding": [
+        {
+            "type": "paypal",
+            "url": "https://www.paypal.com/paypalme/hauerheinrich"
+        }
+    ],
+    "replace": {
+        "hauerheinrich/hh_powermail_timeprotect": "self.version",
+        "typo3-ter/hh-powermail-timeprotect": "self.version"
+    },
+    "require": {
+        "typo3/cms-core": "^12.4.0",
+        "typo3/cms-extbase": "^12.4.0",
+        "typo3/cms-fluid": "^12.4.0",
+        "in2code/powermail": ">= 8.0.0 <= 12.0.99"
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-4": {
+            "HauerHeinrich\\HhPowermailTimeprotect\\": "Classes"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/Web",
+            "extension-key": "hh_powermail_timeprotect"
+        }
+    }
+}
