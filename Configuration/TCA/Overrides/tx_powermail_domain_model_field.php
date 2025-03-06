@@ -1,11 +1,6 @@
 <?php
 defined('TYPO3') || die();
 
-$extensionKey = 'hh_powermail_timeprotect';
-
-// Typo3 extension manager gearwheel icon (ext_conf_template.txt)
-$extensionConfiguration = $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS'][$extensionKey];
-
 /**
  * extend powermail fields tx_powermail_domain_model_field
  */

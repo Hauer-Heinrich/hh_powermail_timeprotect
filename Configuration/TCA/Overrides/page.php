@@ -1,8 +1,7 @@
 <?php
 defined('TYPO3') || die();
 
-call_user_func(function() {
-    $extensionKey = 'hh_powermail_timeprotect';
+call_user_func(function(string $extensionKey) {
 
     // make PageTsConfig selectable
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
@@ -10,4 +9,4 @@ call_user_func(function() {
         'Configuration/TsConfig/AllPage.typoscript',
         'EXT:'.$extensionKey.' :: Powermail time protect'
     );
-});
+}, 'hh_powermail_timeprotect');

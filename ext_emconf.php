@@ -21,10 +21,10 @@ $EM_CONF['hh_powermail_timeprotect'] = [
     'uploadfolder' => '0',
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '1.0.0',
+    'version' => '2.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '^12.2.0',
+            'typo3' => '^12.4.0',
             'fluid_styled_content' => '',
             'powermail' => '',
         ],

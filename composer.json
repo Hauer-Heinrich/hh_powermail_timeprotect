@@ -6,7 +6,7 @@
     "homepage": "https://www.hauer-heinrich.de",
     "readme": "README.md",
     "time": "2024-01-17",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "license": "GPL-3.0-or-later",
     "authors": [
         {
@@ -34,7 +34,7 @@
         "typo3/cms-core": "^12.4.0",
         "typo3/cms-extbase": "^12.4.0",
         "typo3/cms-fluid": "^12.4.0",
-        "in2code/powermail": ">= 8.0.0 <= 12.0.99"
+        "in2code/powermail": ">= 8.0.0 <= 12.5.99"
     },
     "suggest": {
     },
