@@ -11,35 +11,12 @@ use \In2code\Powermail\Domain\Validator\SpamShield\AbstractMethod;
 */
 class Timeprotect extends AbstractMethod {
 
-    /**
-     * @var null|Mail
-     */
-    protected $mail = null;
+    protected \In2code\Powermail\Domain\Model\Mail $mail;
+    protected array $arguments = [];
 
-    /**
-     * @var array
-     */
-    protected $configuration = [];
-
-    /**
-     * @var array
-     */
-    protected $arguments = [];
-
-    /**
-     * @var array
-     */
-    protected $settings = [];
-
-    /**
-     * @return void
-     */
     public function initialize(): void {
     }
 
-    /**
-     * @return void
-     */
     public function initializeSpamCheck(): void {
     }
 

@@ -50,7 +50,7 @@ class Field extends \In2code\Powermail\Domain\Model\Field {
      */
     public function setTxHhpowermailtimeprotectCountText(string $txHhpowermailtimeprotectRandstring): void
     {
-        $this->txHhpowermailtimeprotectCountText = $txHhpowermailtimeprotectCountText;
+        $this->txHhpowermailtimeprotectCountText = $txHhpowermailtimeprotectRandstring;
     }
 
     /**

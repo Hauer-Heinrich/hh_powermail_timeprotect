@@ -24,9 +24,8 @@ $EM_CONF['hh_powermail_timeprotect'] = [
     'version' => '2.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '^12.4.0',
-            'fluid_styled_content' => '',
-            'powermail' => '',
+            'typo3' => '^13.4.0',
+            'powermail' => '^13.0.0',
         ],
         'conflicts' => [
         ],
