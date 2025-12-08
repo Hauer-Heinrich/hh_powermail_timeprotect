@@ -85,6 +85,18 @@ class Timeprotect extends AbstractMethod {
             }
         }
 
+        // WORKAROUND, see https://github.com/in2code-de/powermail/issues/1252
+        //$request = $GLOBALS['TYPO3_REQUEST'];
+
+        $requestedUrl = 'https://'.$_SERVER['HTTP_HOST'].parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
+        $responseFactory = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
+            \Psr\Http\Message\ResponseFactoryInterface::class
+        );
+        $response = $responseFactory
+            ->createResponse()
+            ->withAddedHeader('location', $requestedUrl.'?timeprotect=spam');
+        throw new \TYPO3\CMS\Core\Http\PropagateResponseException($response);
+
         return true;
     }
 }

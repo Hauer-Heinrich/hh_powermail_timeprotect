@@ -4,3 +4,8 @@
 .submit-counter.hidden {
     display: none;
 }
+/* Spam Protection output TODO: WORKAROUND, see https://github.com/in2code-de/powermail/issues/1252 */
+.powermail_field .spam-warning {
+    color: red;
+    font-size: 20px;
+}
