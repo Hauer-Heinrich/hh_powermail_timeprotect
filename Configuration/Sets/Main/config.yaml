@@ -1,0 +1,5 @@
+name: hauerheinrich/hh-powermail-timeprotect
+label: 'Hauer-Heinrich powermail timeprotect, main set'
+
+dependencies:
+  - in2code/powermail-main
